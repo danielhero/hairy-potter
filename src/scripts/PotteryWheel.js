@@ -1,15 +1,10 @@
-let id = 0;
+let id = 1;
 
 export const makePottery = (shape, weight, height) => {
-  id++;
-  return (
-    "shape: " +
-    shape +
-    ", weight: " +
-    weight +
-    ", height: " +
-    height +
-    ", id: " +
-    id
-  );
+  return {
+    shape: shape,
+    weight: weight,
+    height: height,
+    id: id++,
+  };
 };
